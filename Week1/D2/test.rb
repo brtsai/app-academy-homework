@@ -1,4 +1,0 @@
-require 'byebug'
-
-debugger
-"haha"
