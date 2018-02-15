@@ -1,4 +1,3 @@
-require 'byebug'
 class Simon
   COLORS = %w(red blue green yellow)
 
@@ -28,12 +27,22 @@ class Simon
   end
 
   def show_sequence
+    puts "Remember this sequence well, peasant!"
     add_random_color
     puts @seq
   end
 
   def require_sequence
-
+    colour_being_guessed = 0
+    puts "It is time for you to test your memory, and be judged!"
+    until colour_being_guessed == @sequence_length
+      player_guess = gets.chomp
+      if player_guess != @seq[colour_being_guessed]
+        @game_over = true
+        break
+      end
+      colour_being_guessed += 1
+    end
   end
 
   def add_random_color
@@ -55,3 +64,6 @@ class Simon
     @game_over = false
   end
 end
+
+s = Simon.new
+s.play
