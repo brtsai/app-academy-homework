@@ -9,7 +9,9 @@ def sluggish_octopus(fishes)
   end
 end
 
-
+def dominant_octopus(fishes)
+  fishes.sort { |l,r| l.length <=> r.length }.last
+end
 
 def clever_octopus(fishes)
   return "" if fishes.length < 1
