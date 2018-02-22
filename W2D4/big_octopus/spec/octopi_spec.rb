@@ -90,4 +90,21 @@ describe "Octopi" do
 
   end
 
+  describe "#slow_dance" do
+    it "maps a dance move to the correct tentacle" do
+      tiles_array = ["up", "right-up", "right", "right-down", "down", "left-down", "left",  "left-up" ]
+      expect(slow_dance("up", tiles_array)).to eq(0)
+      expect(slow_dance("right-down", tiles_array)).to eq(3)
+    end
+  end
+
+  describe "#constant_dance" do
+    it "maps a dance move to the correct tentacle" do
+      tiles_array = ["up", "right-up", "right", "right-down", "down", "left-down", "left",  "left-up" ]
+      tiles_hash = Hash.new
+      tiles_array.each_with_index { |el, ind| tiles_hash[el] = ind }
+      expect(constant_dance("up", tiles_hash)).to eq(0)
+      expect(constant_dance("right-down", tiles_hash)).to eq(3)
+    end
+  end
 end
