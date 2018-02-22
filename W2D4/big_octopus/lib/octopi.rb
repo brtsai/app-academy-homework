@@ -2,7 +2,7 @@
 def sluggish_octopus(fishes)
   return "" if fishes.length < 1
   longest_fish = fishes[0]
-  (0...fishes.length).each do |fish|
+  fishes.each do |fish|
     return fish if fishes.all? do |other_fish| 
       other_fish.length <= fish.length
     end
