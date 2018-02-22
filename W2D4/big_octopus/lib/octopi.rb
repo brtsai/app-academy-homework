@@ -22,11 +22,14 @@ def clever_octopus(fishes)
   longest_fish
 end
 
-def slow_dance(tiles, move_num)
-  tiles.each_with_index { |el, ind| return el if ind == move_num }
+# takes in an array of moves where each index corresponds to
+# leg number
+def slow_dance(move, tiles)
+  tiles.each_with_index { |el, ind| return ind if el == move }
   nil
 end
 
-def constant_dance(tiles, move_num)
-  tiles[move_num]
+#takes in a hash of moves to leg numbers
+def constant_dance(move, tiles)
+  tiles[move]
 end
