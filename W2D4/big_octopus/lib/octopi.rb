@@ -21,3 +21,12 @@ def clever_octopus(fishes)
   end
   longest_fish
 end
+
+def slow_dance(tiles, move_num)
+  tiles.each_with_index { |el, ind| return el if ind == move_num }
+  nil
+end
+
+def constant_dance(tiles, move_num)
+  tiles[move_num]
+end
