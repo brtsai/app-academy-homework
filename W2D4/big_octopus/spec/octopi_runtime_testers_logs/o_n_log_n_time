@@ -1,0 +1,10 @@
+[9] pry(main)> simulate_o_n_log_n_time(1)
+=> 4.0e-06
+[10] pry(main)> simulate_o_n_log_n_time(10)
+=> 1.4e-05
+[11] pry(main)> simulate_o_n_log_n_time(100)
+=> 6.6e-05
+[12] pry(main)> simulate_o_n_log_n_time(1000)
+=> 0.001706
+[13] pry(main)> simulate_o_n_log_n_time(10000)
+=> 0.089112
