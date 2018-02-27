@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat import_db.sql | sqlite3 plays.db
