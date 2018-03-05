@@ -1,6 +1,7 @@
 class BooksController < ApplicationController
   def index
     # your code here
+    render json: Book.all
   end
 
   def new
