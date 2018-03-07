@@ -1,7 +1,7 @@
 class BooksController < ApplicationController
   def index
     # your code here
-    render json: Book.all
+    @books = Book.all
   end
 
   def new
@@ -14,6 +14,12 @@ class BooksController < ApplicationController
 
   def destroy
     # your code here
+    book = Book.find(params[:id])
+    if book.destroy
+      redirect_to action: 'index', status: 200
+    else
+      redirect_to action: 'index', status: 500
+    end 
   end
 
   private
