@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  before_validation :ensure_session_token, on: :create
+  before_validation :ensure_session_token
 
   validates :username, :session_token, presence: true
   validates :password_digest, presence: { message: "Need a password" }
