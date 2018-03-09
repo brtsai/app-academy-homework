@@ -2,11 +2,14 @@
 
 body {
   /* Write your css here... */
-
+  font-family: sans-serif;
+  font-weights: 400;
+  font-size: 24px;
+  background: #eee;
 }
 
 .header {
-
+  background: #f00;
 }
 
 .header a {
