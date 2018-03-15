@@ -1,0 +1,19 @@
+> ... ... ..... ..... ..... ... ... undefined
+> > ... ... ..... ..... ..... ... ... undefined
+> > ... ... ..... ..... ..... ... ... undefined
+> > ... ... ..... ..... ..... ... ... undefined
+> > ... ... ..... ..... ..... ... ... ... undefined
+> > in block
+in block
+undefined
+> in block
+out of block
+undefined
+> SyntaxError: Identifier 'x' has already been declared
+
+> in block
+out of block
+undefined
+> SyntaxError: Identifier 'x' has already been declared
+
+> 
