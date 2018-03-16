@@ -121,3 +121,5 @@ class Game
   end
 
 end
+
+Game.start_new_game("Bryan", "Michelle")
