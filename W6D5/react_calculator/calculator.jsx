@@ -15,11 +15,11 @@ class Calculator extends React.Component{
   }
 
   setLeftNum(e){
-    this.setState({leftNum: parseInt(e.target.value)});
+    this.setState({leftNum: parseInt(e.target.value).toString()});
   }
 
   setRightNum(e){
-    this.setState({rightNum: parseInt(e.target.value)});
+    this.setState({rightNum: parseInt(e.target.value.toString())});
   }
 
   clear(e) {
